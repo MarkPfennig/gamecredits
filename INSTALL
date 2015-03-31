@@ -1,0 +1,5 @@
+Building GameCredits
+
+See doc/build-*.md for instructions on building gamecreditsd,
+the intended-for-services, no-graphical-interface, reference
+implementation of GameCredits.
