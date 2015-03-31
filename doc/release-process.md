@@ -98,8 +98,8 @@ Release Process
 	zip -r gamecredits-${VERSION}-win-gitian.zip *
 	mv gamecredits-${VERSION}-win-gitian.zip ../../../
 	popd
-    ./bin/gbuild --commit gamecredits=v${VERSION} ../gamecredits/contrib/gitian-descriptors/gitian-osx-gamecredits.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx --destination ../gitian.sigs/ ../gamecredits/contrib/gitian-descriptors/gitian-osx-gamecredits.yml
+    ./bin/gbuild --commit gamecredits=v${VERSION} ../gamecredits/contrib/gitian-descriptors/gitian-osx-bitmark.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx --destination ../gitian.sigs/ ../gamecredits/contrib/gitian-descriptors/gitian-osx-bitmark.yml
 	pushd build/out
 	mv GameCredits-Qt.dmg ../../../
 	popd
