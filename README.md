@@ -1,7 +1,9 @@
 # GameCredits
 
-GameCredits is the Cloneable Reference Implementation of [Bitmark](https://github.com/project-bitmark/bitmark/), a new tested implementation using Scrypt PoW.
+TESTING
 
-GameCredits benefits from being based on both the latest release of Bitmark, and the latest release of Bitcoin, with all BIPs unconditionally supported, all tests passing, and a clean code base.
+This repo contains GameCredits ported to Bitcoin 0.9.4 adapted for Scrypt and KGW using Pfennig as a based.
 
-For configuration details see the [wiki](https://github.com/project-bitmark/gamecredits/wiki)
+The code is currently being tested, and SHOULD NOT be used in a live environment.
+
+Notably, wallet import and upgrading has NOT been tested yet.
