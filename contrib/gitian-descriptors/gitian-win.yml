@@ -1,5 +1,5 @@
 ---
-name: "bitmark"
+name: "gamecredits"
 suites:
 - "precise"
 architectures:
