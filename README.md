@@ -1,9 +1,12 @@
 # GameCredits
 
-TESTING
+This repo contains the latest version of GameCredits.
 
-This repo contains GameCredits ported to Bitcoin 0.9.4 adapted for Scrypt and KGW using Pfennig as a based.
+GameCredits has been ported to the newest Pfennig code base, which is equivalent to Bitcoin 0.9.4 adapted to Scrypt and KGW.
 
-The code is currently being tested, and SHOULD NOT be used in a live environment.
+This version of GameCredits is fully tested on all platforms, downloads can be found by clicking the releases tab.
 
-Notably, wallet import and upgrading has NOT been tested yet.
+Please upgrade to keep the network secure, and your client functioning.
+
+Post Fork GameCredits 0.8.4+ will co-operate with the new GameCredits 0.9.4, but SHOULD be upgraded.
+Pre Fork GameCredits/GamersCoin 0.8.3 and earlier MUST be upgraded to successfully join the GMC network.
