@@ -21,7 +21,7 @@ using namespace boost::assign;
 
 unsigned int pnSeed[] =
 {
-	0x2578a0d5 // replace this with your own networks fixed seed nodes
+	0x2578a0d5, 0x9da1803e // replace this with your own networks fixed seed nodes
 };
 
 class CMainParams : public CChainParams {
@@ -62,7 +62,7 @@ public:
         assert(hashGenesisBlock == uint256("0x91ec5f25ee9a0ffa1af7d4da4db9a552228dd2dc77cdb15b738be4e1f55f30ee"));
 
         // todo add more dns seeders
-        vSeeds.push_back(CDNSSeedData("gs.co", "seects.co"));
+        vSeeds.push_back(CDNSSeedData("gmc-server.de", "gmc-server.de"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(38); // b
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
