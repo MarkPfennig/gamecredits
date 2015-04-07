@@ -54,7 +54,7 @@
       <key>UTTypeIdentifier</key>
       <string>org.bitmark.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Bitmark payment request</string>
+      <string>GameCredits payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>

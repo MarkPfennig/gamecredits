@@ -48,10 +48,10 @@
 using namespace boost;
 
 const int BITMARK_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString BITMARK_IPC_PREFIX("bitmark:");
-const char* BITMARK_REQUEST_MIMETYPE = "application/bitmark-paymentrequest";
-const char* BITMARK_PAYMENTACK_MIMETYPE = "application/bitmark-paymentack";
-const char* BITMARK_PAYMENTACK_CONTENTTYPE = "application/bitmark-payment";
+const QString BITMARK_IPC_PREFIX("gamecredits:");
+const char* BITMARK_REQUEST_MIMETYPE = "application/gamecredits-paymentrequest";
+const char* BITMARK_PAYMENTACK_MIMETYPE = "application/gamecredits-paymentack";
+const char* BITMARK_PAYMENTACK_CONTENTTYPE = "application/gamecredits-payment";
 
 X509_STORE* PaymentServer::certStore = NULL;
 void PaymentServer::freeCertStore()
@@ -291,7 +291,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
         if (!uriServer->listen(name)) {
             // constructor is called early in init, so don't use "emit message()" here
             QMessageBox::critical(0, tr("Payment request error"),
-                tr("Cannot start bitmark: click-to-pay handler"));
+                tr("Cannot start gamecredits: click-to-pay handler"));
         }
         else {
             connect(uriServer, SIGNAL(newConnection()), this, SLOT(handleURIConnection()));

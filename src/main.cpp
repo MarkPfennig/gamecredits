@@ -28,7 +28,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Bitmark cannot be compiled without assertions."
+# error "GameCredits cannot be compiled without assertions."
 #endif
 
 //

@@ -116,7 +116,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitmarkURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no bitmark: URI
-    if(!uri.isValid() || uri.scheme() != QString("bitmark"))
+    if(!uri.isValid() || uri.scheme() != QString("gamecredits"))
         return false;
 
     SendCoinsRecipient rv;
@@ -176,9 +176,9 @@ bool parseBitmarkURI(QString uri, SendCoinsRecipient *out)
     //
     //    Cannot handle this later, because bitmark:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("bitmark://", Qt::CaseInsensitive))
+    if(uri.startsWith("gamecredits://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 10, "bitmark:");
+        uri.replace(0, 14, "gamecredits:");
     }
     QUrl uriInstance(uri);
     return parseBitmarkURI(uriInstance, out);
@@ -186,7 +186,7 @@ bool parseBitmarkURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitmarkURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("bitmark:%1").arg(info.address);
+    QString ret = QString("gamecredits:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
